@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+
+let listanome = ["Alberto", "João", "Amanda", "Fábio", "Maria", "Eduardo", "Gabriela"];
+let nomesA = [];
+let nomesnormais = [];
+
+for (let nome of listanome) {
+    if (nome.charAt(0) === "A") {
+        nomesA.push(nome);
+    }
+    else {
+        nomesnormais.push(nome);
+    }
+}
+
+document.write(`Nomes Com A: ${nomesA.sort().join(", ")}</br>`);
+document.write(`Nomes normais: ${nomesnormais.sort().join(", ")}`);
+
+</script>

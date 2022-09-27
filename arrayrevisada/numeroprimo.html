@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+const diganumero = Number(prompt("Informe um número"));
+let primo = 0;
+
+
+for(let contador = 1; contador <= diganumero; contador++ ){
+
+    if(diganumero % primo === 0){
+        primo++
+    }
+    if(primo === 2 ){
+        document.write(`O número ${diganumero} é um número primo`)
+    }
+    else{ 
+        document.write(`O número ${diganumero} não é primo`)
+    }
+}
+
+</script>
